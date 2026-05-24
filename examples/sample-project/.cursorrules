@@ -1,0 +1,10 @@
+{
+  "version": "2026.05",
+  "defaultModel": "composer-2.5",
+  "description": "Sample project for grok-cursor-bridge demonstration",
+  "customCommands": {
+    "plan": "You are the Mission Commander. Read the project rules first.",
+    "build": "You are the Implementer. Follow the architecture guardian and implementer rules.",
+    "review": "Review this change using the architecture guardian guidelines."
+  }
+}
