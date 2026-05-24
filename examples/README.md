@@ -23,4 +23,15 @@ This is a minimal fake project that includes:
 
 You’ll see exactly how the bridge detects and wraps Cursor content.
 
-This structure works the same whether you’re building web apps, mobile apps, CLI tools, or anything else. The bridge is completely generic.
+## web-project (Second Example)
+
+A lightweight example showing a different tech stack (web/API focused).
+
+Contains:
+- `.cursor/skills/api-guardian/SKILL.md`
+
+This proves the bridge is completely generic and works for any kind of project.
+
+## Recommendation
+
+Try the bridge on both examples to see how it behaves with different structures and naming.

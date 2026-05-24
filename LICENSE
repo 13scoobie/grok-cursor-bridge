@@ -19,19 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Additional Attribution Requirement
-
-If you use, copy, modify, distribute, or create derivative works based on this
-Software (or any substantial portion of it), you must include a prominent
-notice in the documentation, source code, or other materials provided with the
-Software stating that the original source code was obtained from:
-
-  https://github.com/13scoobie/grok-cursor-bridge
-
-(or the canonical public repository URL for this project at the time of your
-use or distribution).
-
-This requirement is in addition to the conditions of the MIT License above.

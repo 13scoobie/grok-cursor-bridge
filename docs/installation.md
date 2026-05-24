@@ -105,10 +105,23 @@ No. The bridge works without it using the fallback mode. Step 2 just makes every
 Fully quit the Grok application/TUI and open it again. Just running `/skills` is often enough, but a full restart is more reliable after config changes.
 
 **I don't have `curl`. Can I still install it?**  
-Yes — use Option A (Manual Install) above. Just download the file in your browser.
+Yes — use the browser download method in the Manual Install section. Just save the raw file.
 
 **I'm on Windows and the paths look weird**  
 Use the Windows-style paths shown in the steps above. Grok handles both styles in most cases.
+
+**Does this work equally well on macOS, Linux, and Windows?**  
+Yes. The core functionality is the same. The main differences are file paths and how you create folders. The documentation includes instructions for all three.
+
+**Recommended testing approach:**
+- Test the plugin install method on your main machine.
+- Test the manual copy method on at least one other OS if possible (especially Windows if you're primarily on macOS/Linux).
+- Pay attention to:
+  - Correct creation of the `cursor-bridge` folder
+  - Proper path in `config.toml`
+  - Whether `grok inspect` correctly shows the imported skills after restart
+
+If you run into platform-specific issues, please open a GitHub issue with your OS and exact error.
 
 ---
 

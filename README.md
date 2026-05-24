@@ -6,6 +6,17 @@ If you’ve spent time building great agents and skills in Cursor, this tool let
 
 No duplication. No context switching. Just better results.
 
+### Before vs After
+
+**Before:** You open a project in Grok and it has zero knowledge of your carefully crafted Cursor rules.
+
+**After:** One command later, your Cursor agents and skills are available as real, first-class Grok skills (`/name`, auto-triggering, visible in grok inspect).
+
+### Who This Is For
+- Cursor power users who also use the Grok Build TUI
+- Anyone who has invested time in `.cursor/skills/` or `.cursor/agents/`
+- Teams or individuals who want to keep their AI coding conventions consistent across tools
+
 ---
 
 ## The Problem It Solves
@@ -88,7 +99,7 @@ Your actual rules stay in Cursor. You just tell the bridge to refresh when you m
 - Understands your `.cursorrules`
 - Completely safe — never touches your original files
 - Works great even if you skip the config step (has a good fallback)
-- Plays nicely with the superpowers plugin and everything else
+- Plays nicely with everything else
 
 ---
 
@@ -108,15 +119,16 @@ Grok will now follow those rules.
 
 ## License & Attribution
 
-This project is MIT licensed **with one extra rule**:
-
-If you use or share the code, please credit the original repository:
-
-→ https://github.com/13scoobie/grok-cursor-bridge
-
+This project is MIT licensed
 See [LICENSE](./LICENSE) for details.
 
 ---
+
+**Current Status**: Early but usable (v0.2). The core functionality works well for most projects on macOS, Linux, and Windows. Feedback on edge cases and real-world usage (especially on Windows) is very welcome.
+
+We are actively looking for contributors to help with testing, documentation, and edge case handling. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+
+Visual guidance and screenshot placeholders are in `assets/images/` and `docs/visual-assets-guide.md`.
 
 **Not affiliated with xAI or Cursor.**  
 Just a useful community tool.
