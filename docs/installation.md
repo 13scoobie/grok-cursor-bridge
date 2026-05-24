@@ -8,35 +8,48 @@ This guide is written for users of **any skill level** on macOS, Linux, and Wind
 
 ## Step 1: Install the Skill
 
-You have two options. Pick the one that feels easier.
+You now have two good options. The **plugin method** is recommended.
 
-### Option A: Manual Install (Fastest to Try)
-
-This is the simplest way to get started.
-
-1. Open your file manager or terminal and go to your Grok skills folder:
-   - **macOS / Linux**: `~/.grok/skills/`
-   - **Windows**: `%USERPROFILE%\.grok\skills\` (usually `C:\Users\YourName\.grok\skills\`)
-
-2. Create a new folder called `cursor-bridge` inside it.
-
-3. Download the skill file:
-   - Go to this link in your browser:  
-     `https://raw.githubusercontent.com/13scoobie/grok-cursor-bridge/main/cursor-bridge/SKILL.md`
-   - Right-click → **Save As** → save it as `SKILL.md` inside the `cursor-bridge` folder you just created.
-
-### Option B: Install as a Plugin (Easiest to Update Later)
-
-If you already use plugins with Grok, run this command in the Grok TUI:
+### Option 1: Install as a Plugin (Recommended)
 
 ```bash
-grok plugin install 13scoobie/grok-cursor-bridge
+grok plugin install 13scoobie/grok-cursor-bridge --trust
 ```
 
-To update later, just run:
+To update later:
 ```bash
 grok plugin update grok-cursor-bridge
 ```
+
+### Option 2: Manual Install
+
+1. Go to your Grok skills folder:
+   - **macOS / Linux**: `~/.grok/skills/`
+   - **Windows**: `%USERPROFILE%\.grok\skills\`
+
+2. Create a folder called `cursor-bridge` inside it.
+
+3. Download the skill file:
+
+   **Browser (easiest):**
+   - Visit:  
+     https://raw.githubusercontent.com/13scoobie/grok-cursor-bridge/main/skills/cursor-bridge/SKILL.md
+   - Save the file as `SKILL.md` inside the `cursor-bridge` folder.
+
+   **Terminal (macOS / Linux):**
+   ```bash
+   mkdir -p ~/.grok/skills/cursor-bridge
+   curl -o ~/.grok/skills/cursor-bridge/SKILL.md \
+     https://raw.githubusercontent.com/13scoobie/grok-cursor-bridge/main/skills/cursor-bridge/SKILL.md
+   ```
+
+   **Terminal (Windows PowerShell):**
+   ```powershell
+   New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.grok\skills\cursor-bridge"
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/13scoobie/grok-cursor-bridge/main/skills/cursor-bridge/SKILL.md" -OutFile "$env:USERPROFILE\.grok\skills\cursor-bridge\SKILL.md"
+   ```
+
+After installing, fully restart the Grok TUI (or run `/skills`).
 
 ---
 
@@ -107,6 +120,20 @@ Use the Windows-style paths shown in the steps above. Grok handles both styles i
 | "No .cursor directory found" | Make sure your current working directory actually contains a `.cursor` folder |
 | Wrappers don't show in `grok inspect` | You probably skipped Step 2 (the config change) |
 | Want to remove everything the bridge created | Run `/cursor-bridge remove --all` |
+
+---
+
+## Updating the Skill
+
+**If you installed via plugin (recommended):**
+```bash
+grok plugin update grok-cursor-bridge
+```
+
+**If you installed manually:**
+1. Re-download the latest `SKILL.md` from the link in Step 1.
+2. Replace the file in your `cursor-bridge` folder.
+3. Restart Grok or run `/skills`.
 
 ---
 

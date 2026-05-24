@@ -20,37 +20,41 @@ This bridge fixes that.
 
 ## Quick Start (Most People)
 
-1. **Install the skill**
+### 1. Install the skill (choose one)
 
-   **Easiest way:**
-   ```bash
-   grok plugin install 13scoobie/grok-cursor-bridge
-   ```
+**Recommended – As a plugin:**
+```bash
+grok plugin install 13scoobie/grok-cursor-bridge --trust
+```
 
-   **Alternative (no plugin):**
-   Download this file and put it in `~/.grok/skills/cursor-bridge/SKILL.md`:
-   https://raw.githubusercontent.com/13scoobie/grok-cursor-bridge/main/cursor-bridge/SKILL.md
+**Alternative – Manual copy:**
+- Download: https://raw.githubusercontent.com/13scoobie/grok-cursor-bridge/main/skills/cursor-bridge/SKILL.md
+- Save it to:
+  - macOS/Linux: `~/.grok/skills/cursor-bridge/SKILL.md`
+  - Windows: `%USERPROFILE%\.grok\skills\cursor-bridge\SKILL.md`
 
-2. **(Recommended) Add one small setting**
+### 2. (Strongly recommended) Add this to your config
 
-   Add this to your `~/.grok/config.toml` file, then fully restart Grok:
+Add the following to your `~/.grok/config.toml`, then fully restart Grok:
 
-   ```toml
-   [skills]
-   paths = ["~/.grok/cursor-imports"]
-   ```
+```toml
+[skills]
+paths = ["~/.grok/cursor-imports"]
+```
 
-3. **Try it**
+> Windows users: You can also use `paths = ["%USERPROFILE%\\.grok\\cursor-imports"]`
 
-   Go into any project that has a `.cursor` folder and run:
+### 3. Use it
 
-   ```bash
-   /cursor-bridge import
-   ```
+Go into any project that has a `.cursor/` folder and run:
 
-That’s it. Your Cursor rules are now available as real Grok skills.
+```bash
+/cursor-bridge import
+```
 
-Full beginner-friendly instructions (including Windows) → [Installation Guide](docs/installation.md)
+Your Cursor rules are now available inside Grok.
+
+For full step-by-step instructions (including Windows), see the [Installation Guide](docs/installation.md).
 
 ---
 

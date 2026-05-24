@@ -1,0 +1,10 @@
+{
+  "name": "grok-cursor-bridge",
+  "version": "0.1.0",
+  "description": "Bridge any project's .cursor/agents and .cursor/skills into Grok as first-class skills.",
+  "author": "13scoobie",
+  "homepage": "https://github.com/13scoobie/grok-cursor-bridge",
+  "skills": [
+    "cursor-bridge"
+  ]
+}
